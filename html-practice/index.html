@@ -339,6 +339,54 @@
 
 	<img class="map2" src="http://kpq.github.io/nyu-data-journalism-fall-2014/classes/codey-code-code/chi.png" align="middle">
 
+	<SCRIPT LANGUAGE="JavaScript">
+
+var num=1
+img1 = new Image ()
+img1.src = "http://kpq.github.io/nyu-data-journalism-fall-2014/classes/codey-code-code/chi.png"
+img2 = new Image ()
+img2.src = "http://kpq.github.io/nyu-data-journalism-fall-2014/classes/codey-code-code/ms.png"
+img3 = new Image ()
+img3.src = "http://kpq.github.io/nyu-data-journalism-fall-2014/classes/codey-code-code/coverage.png"
+
+text1 = "Map One"
+text2 = "Map Two"
+text3 = "Map Three"
+
+function slideshowUp()
+{
+num=num+1
+if (num==5)
+{num=1}
+document.mypic.src=eval("img"+num+".src")
+document.joe.burns.value=eval("text"+num)
+}
+
+function slideshowBack()
+{
+num=num-1
+if (num==0)
+{num=4}
+document.mypic.src=eval("img"+num+".src")
+document.joe.burns.value=eval("text"+num)
+}
+
+</SCRIPT>
+
+<!-- The Image and Form Codes are Below --> 
+
+<CENTER>
+<IMG SRC="http://kpq.github.io/nyu-data-journalism-fall-2014/classes/codey-code-code/chi.png NAME="mypic" BORDER=0 HEIGHT="100" WIDTH="100">
+<p>
+
+<FORM NAME="joe">
+<INPUT TYPE="text" WIDTH="100" NAME="burns" VALUE="Map One">
+</FORM>
+
+<A HREF="JavaScript:slideshowBack()"> Back</A>
+
+<A HREF="JavaScript:slideshowUp()"> Next</A> 
+
 	<div class="slideshow-caption">Partial Map</div>
 	<div class="slideshow-credit">Courtesy of: NYT</div>
 	<br>
