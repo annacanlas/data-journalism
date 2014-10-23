@@ -52,10 +52,6 @@
 				margin-bottom: 15px;
 			}
 
-			img {
-				width: 300px;
-			}
-
 			img.us-map {
 				width: 150%;
 			}
@@ -302,7 +298,7 @@
 	<img class="us-map" src="http://kpq.github.io/nyu-data-journalism-fall-2014/classes/codey-code-code/big-map.png">
 
 	<div class="content-image--copy">
-		<p class="content-image--credit">Figure 1: World Map</p>
+		<p class="content-image--credit">US Map</p>
 	</div>
 
 	<p>Chicago is seen as having some of the most restrictive gun ordinances in the country. Gun shops are banned, and no civilian gun ranges exist. There is a ban on both assault weapons and high-capacity magazines. But more than 15,000 of the guns traced by the police came from just outside the city limits in Cook County and in neighboring towns that permit gun stores.</p>
@@ -359,8 +355,55 @@
 
 	<p>More than 4,000 guns were traced to Mississippi, especially in the rural, western part of the state, more than any outside state other than Indiana. During the migration of families from the South in the 1940s and 1970s, Chicago was a top destination, according to James N. Gregory, a history professor at the University of Washington. In 1970 there were more people from Mississippi living in Illinois than in all other Southern states. Family ties may help explain why many guns bought in Mississippi ended up in Chicago.</p>
 
-	<img class="map2" src="http://kpq.github.io/nyu-data-journalism-fall-2014/classes/codey-code-code/chi.png" align="middle">
-	<div class="slideshow-caption">Partial Map</div>
+<SCRIPT LANGUAGE="JavaScript">
+
+var num=1
+img1 = new Image ()
+img1.src = "http://kpq.github.io/nyu-data-journalism-fall-2014/classes/codey-code-code/coverage.png"
+img2 = new Image ()
+img2.src = "http://kpq.github.io/nyu-data-journalism-fall-2014/classes/codey-code-code/ms.png"
+img3 = new Image ()
+img3.src = "http://kpq.github.io/nyu-data-journalism-fall-2014/classes/codey-code-code/chi.png" 
+
+text1 = "Map 1"
+text2 = "Map 2"
+text3 = "Map 3"
+
+function slideshowUp()
+{
+num=num+1
+if (num==4)
+{num=1}
+document.mypic.src=eval("img"+num+".src")
+document.joe.burns.value=eval("text"+num)
+}
+
+function slideshowBack()
+{
+num=num-1
+if (num==0)
+{num=3}
+document.mypic.src=eval("img"+num+".src")
+document.joe.burns.value=eval("text"+num)
+}
+
+</SCRIPT>
+
+<!-- The Image and Form Codes are Below --> 
+
+<CENTER>
+<IMG SRC="http://kpq.github.io/nyu-data-journalism-fall-2014/classes/codey-code-code/coverage.png" NAME="mypic" BORDER=0 HEIGHT="400">
+<p>
+
+<FORM NAME="joe">
+<INPUT TYPE="text" WIDTH="100" NAME="burns" VALUE="Map 1">
+</FORM>
+
+<A HREF="JavaScript:slideshowBack()"> Back</A>
+
+<A HREF="JavaScript:slideshowUp()"> Next</A> 
+
+	<div class="slideshow-caption">Supporting Maps</div>
 	<div class="slideshow-credit">Courtesy of: NYT</div>
 	<br>
 	<div class="article-tags">
