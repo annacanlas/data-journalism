@@ -29,69 +29,81 @@
         filter:alpha(opacity=100);
       }
 
+      .selected {
+        opacity: 0.2;
+      }
+
   </style>
 
 
   <h1>Starter interactive</h1>
 
-  <p>This is where HTML will go.</p>
+  <p id="total">Total dose: <span id="total-amount-value"></span></p>
 
 <div>
-  <img data-dose='2000' src="drugs/excedrin.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='2600' src="drugs/nyquil.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='3840' src="drugs/robitussin.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='3250' src="drugs/sudafed.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='2000' src="drugs/alkaseltzer.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
+  <img data-dose='2000' src="drugs/excedrin.jpg">
+  <img data-dose='2600' src="drugs/nyquil.jpg">
+  <img data-dose='3840' src="drugs/robitussin.jpg">
+  <img data-dose='3250' src="drugs/sudafed.jpg">
+  <img data-dose='2000' src="drugs/alkaseltzer.jpg">
 </div>
-  <img data-dose='3900' src="drugs/theraflu.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='3000' src="drugs/tylenolextrastrngth.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='3900' src="drugs/zicam.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='4000' src="drugs/anacin.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='800' src="drugs/childrenstylenol.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
+  <img data-dose='3900' src="drugs/theraflu.jpg">
+  <img data-dose='3000' src="drugs/tylenolextrastrngth.jpg">
+  <img data-dose='3900' src="drugs/zicam.jpg">
+  <img data-dose='4000' src="drugs/anacin.jpg">
+  <img data-dose='800' src="drugs/childrenstylenol.jpg">
 <div>
-  <img data-dose='800' src="drugs/dimetapp.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='800' src="drugs/panadol.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='1300' src="drugs/dayquil.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='3900' src="drugs/coricidin.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='4000' src="drugs/tylenolwcodeine.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
+  <img data-dose='800' src="drugs/dimetapp.jpg">
+  <img data-dose='800' src="drugs/panadol.jpg">
+  <img data-dose='1300' src="drugs/dayquil.jpg">
+  <img data-dose='3900' src="drugs/coricidin.jpg">
+  <img data-dose='4000' src="drugs/tylenolwcodeine.jpg">
 </div>
 <div>
-  <img data-dose='3960' src="drugs/vicodin.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='3900' src="drugs/percoset.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='3900' src="drugs/hydrocodone.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='3900' src="drugs/oxycodone.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
-  <img data-dose='2600' src="drugs/ultracet.jpg" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60">
+  <img data-dose='3960' src="drugs/vicodin.jpg">
+  <img data-dose='3900' src="drugs/percoset.jpg">
+  <img data-dose='3900' src="drugs/hydrocodone.jpg">
+  <img data-dose='3900' src="drugs/oxycodone.jpg">
+  <img data-dose='2600' src="drugs/ultracet.jpg">
 </div>
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <script type="text/javascript">
 
-  // this is how you comment in javascript.
-    console.log("this is where javascript will go!");
+    var totaldose=0;
 
     $("img").click(function(){
-      alert($(this).attr("data-dose"))
+    
+    var thisdose = parseInt($(this).attr("data-dose"));
+
+    var isselected = $(this).hasClass("selected");
+
+    if (isselected == true) {
+    totaldose = totaldose - thisdose;
+    }
+
+    if (isselected == false) {
+    totaldose = thisdose + totaldose;
+
+    }
+
+    $(this).toggleClass('selected');
+
+    $("#total-amount-value").html(totaldose);
+
+    if (totaldose >= 4000 && totaldose < 8000) {
+      alert("Above Daily Limit");
+    }
+    
+    if (totaldose >= 8000 && totaldose < 15000) {
+      alert("Liver Damage");
+    } 
+
+    if (totaldose >= 15000) {
+      alert("Death");
+    }
+
     });
 
   </script>
