@@ -1,0 +1,23 @@
+ <style type="text/css">
+ </style>
+
+<h1>Word Count</h1>
+
+Word count: <span id="wordcount"></span>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+//GET https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=twitterapi&count=2
+
+
+<form method="POST" name="wordcount">
+  <script language="JavaScript">
+
+function countit(){
+
+wordcount = function() {
+var words = document.getElementsByTagName('body')[0].innerHTML.replace(/<.*?>/g, '');
+return words.match(/\S+/g).length;
+}
+
+
