@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
+{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Bold;\f4\fnil\fcharset0 Calibri;}
+{\colortbl;\red255\green255\blue255;\red31\green35\blue38;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs28 \cf2 GET\
+https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=twitterapi&count=2
+\f1\fs24 \cf0 words: published words\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural
+\cf0 tweeted words per published word\
+list of orgs i have - author bio pages - articles - word count\
+-scrape articles\
+\
+find the orbs which itsp ossible for or not\
+\
+no of tweets total\
+\
+50 people\
+organization\
+job title\
+\
+can narrow down to 20 people.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 curl -s https://twitter.com/kevinq | grep "ProfileNav-stat ProfileNav-stat--link u-borderUserColor u-textCenter js-tooltip js-nav"\
+\
+
+\f3\b code for fetching tweets!!:
+\f2\b0  
+\f4\fs24 \CocoaLigature1 curl -o twit.txt https://twitter.com/LaurenZaser | grep "ProfileNav-stat ProfileNav-stat--link u-borderUserColor u-textCenter js-tooltip js-nav"\
+\
+
+\f2\fs22 \CocoaLigature0 curl -s \'93http://www.buzzfeed.com/tracyclayton/hold-it-down\'94 | grep \'93b h1 h2"\
+\
+ELEMENTS TO GREP:\
+post-title\
+og:description\
+buzz_superlist_number_inline\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 curl -s http://www.buzzfeed.com/tracyclayton/hold-it-down/ | grep \'91post-title\'92| grep \'92og:description\'92| grep \'92buzz_superlist_number_inline\'92 > desc3.txt}
