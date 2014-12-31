@@ -1,0 +1,441 @@
+<html>
+<head>
+<style>
+
+			#title {
+			font-size: 20px;
+			text-decoration: none;
+			font-family: anke;
+			color:rgb(0,0,0);
+			padding-left: 10px;
+			padding-top: 6px;
+			padding-bottom: 10px;
+			}
+
+			div.header {
+				background-attachment: scroll;
+				background-clip: border-box;
+				background-color: white;
+				background-image: none;
+				background-origin: padding-box;
+				box-sizing: border-box;
+				position: fixed;
+				width: 1350px;
+				z-index: 10;
+				border-bottom-color: #000000;
+				border-bottom-style: dotted;
+				border-bottom-width: 1px;
+				padding-top: 20px;
+				top: 0px;
+			}
+
+			li {
+				cursor: auto;
+				display: inline;
+				font-family: helvetica;
+				font-size: 12px;
+				font-stretch: normal;
+				font-style: normal;
+				font-weight: bold;
+				letter-spacing: 0.300000011920929px;
+				line-height: 30px;
+				padding-bottom: 5px;
+				padding-left: 90px;
+				padding-right: 11px;
+				padding-top: -20px;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+				vertical-align: baseline;
+				width: auto;
+				zoom: 1;
+				color: #BDBDBD;
+			}
+
+			#navi {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 5;
+				left: 55;
+			}
+
+			#search {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 20;
+				left: 1205;
+			}
+
+			h3 {
+			font-family: Times;
+			font-size: 20px;
+			line-height: 22px;
+			line-height: 28px;
+			text-align: left;
+			width: 600px;
+			color: rgb(0,0,0);
+			font-weight: normal;
+			margin-left: 300px;
+			padding-top: 20px;
+			}
+
+			a {
+    			text-decoration: none;
+    			color:rgb(51,51,51);
+			}
+
+			a:hover {
+				font-style: bold;
+				color: #F6CEF5;
+			}
+
+			#background {   
+    			background-color: black;
+    			color: white;
+    			width: 240px;
+    			border-left-color: black;
+  				border-left-width: 1px;
+  				border-left-style: dotted;
+			}
+
+			div.banner {
+				font-size: 20px;
+				font-family: anke;
+				vertical-align: center;
+				margin-left: 990px;
+				position: absolute;
+    			left: 50px;
+    			width: 300px;   
+    			text-align: center;
+    			height: 50px;
+  				line-height: 50px;
+  				padding-left: 5px;
+  				border-left-color: black;
+  				border-left-width: 1px;
+  				border-left-style: dotted;
+  				height: 1500px;
+  				padding-top: 43px;
+			}
+
+			img.banner {
+				width: 300px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			p.category {
+				font-family: helvetica;
+				font-size: 12px;
+				line-height: 12px;
+				font-weight: bolder;
+				text-transform: uppercase;
+				margin-left: 20px;
+				color: #F5A9E1;
+				padding-top: 70px;
+			}
+
+			h1 {
+				font-family: anke;
+				color: black;
+				font-size: 45px;
+				line-height: 44px;
+				font-weight: normal;
+				vertical-align: baseline;
+				margin-left: 20px;
+				width: 145px;
+				display: inline-block;
+			}
+
+			p.credits {
+				box-sizing: border-box;
+				color: black;
+				font-family: times;
+				font-size: 13px;
+				display: block;
+				margin-left: 20px;
+			}
+
+			img.main {
+				width: 550px;
+				padding-top: 20px;
+				margin-top: -320px;
+				margin-left: 350px;
+			}
+
+			#popular {
+    			background-color: black;
+    			color: white;
+    			width: 300px;
+    			float: center;
+			}
+
+			div.action {
+				font-size: 12px;
+				font-family: anke;
+				font-style: normal;
+				line-height: 12px;
+				text-decoration: none;
+				padding-top: 6px;
+				padding-left: 6px;
+				padding-right: 6px;
+				padding-bottom: 6px;
+				width: 122px;
+				text-align: center;
+				margin-top: 10px;
+				margin-left: 525px;
+				margin-bottom: 30px;
+				background-color: #F5A9E1;
+				color: black; 
+			}
+
+			footer {
+			background-attachment: scroll;
+			background-clip: border-box;
+			background-color: rgb(229,229,229);
+			background-size: auto;
+			font-family: anke;
+			font-size: 11px;
+			font-style: normal;
+			height: 400px;
+			line-height: 16px;
+			padding-bottom: 30px;
+			position: relative;
+			text-align: center;
+			vertical-align: baseline;
+			width: 1360px;
+			margin-top: 100px;
+		}
+
+		img.logo {
+			width: 38px;
+			padding-bottom: 30px;
+			margin-top: 50px;
+			margin-left: -40px;
+		}
+
+		div.cols {
+			font-family: anke;
+			font-size: 11px;
+			outline-width: 0px;
+			outline-color: rgb(153,153,153);
+			color: rgb (153,153,153);
+			overflow-x: hidden;
+			overflow-y: hidden;
+			text-align: left;
+			vertical-align: baseline; 
+			font-weight: normal;
+			margin-top: 10px;
+		}
+
+		h2 {
+			color: rgb(77,77,77);
+			font-weight: normal;
+			font-size: 11px;
+		}
+
+		div.col1 {
+			width: 200px;
+			float: left;
+			padding-left: 150px;
+		}
+
+		div.col2 {
+			width: 200px;
+			float: left;
+			padding-left: 250px;
+			margin-top: -82px;
+		}
+
+		div.col3 {
+			width: 200px;
+			float: left;
+			padding-left: 415px;
+			margin-top: -97px;
+		}
+
+		div.col4 {
+			width: 200px;
+			float: left;
+			padding-left: 610px;
+			margin-top: -145px;
+		}
+
+		div.col5 {
+			width: 200px;
+			float: left;
+			padding-left: 780px;
+			margin-top: -225px;
+		}
+
+		div.col6 {
+			width: 200px;
+			float: left;
+			padding-left: 950px;
+			margin-top: -228px;
+		}
+
+		span.items {
+			font-family: helvetica;
+			font-weight: normal;
+			color: white;
+		}
+
+		a:hover {
+				font-style: bold;
+				color: #F6CEF5;
+			}
+
+		h4.share {
+			font-size: 11px;
+			font-family: anke;
+			margin-left: 300px;
+			margin-top: 20px;
+		}
+
+		img.share {
+			margin-left: 297px;
+			margin-top: 5px;
+			margin-bottom: 90px;
+		}
+
+		div.line {
+			border-top-color: rgb(51,51,51);
+			border-top-style: solid;
+			border-top-width: 1px;
+			width: 65px;
+			margin-left: 300px;
+		}
+
+		img.bottom-ad {
+			margin-left: 180px;
+			margin-top: 20px;
+		}
+
+</style>
+<title>Preview Magazine Online</title>
+</head>
+<body>
+
+<div class="header">
+	<div id="title"><a href="stylebible.html">StyleBible</a></div>
+	<div id="navi">
+		<ul>
+		<li class="fashion">Fashion</li>
+		<li class="beauty">Beauty</li>
+		<li class="culture">Culture</li>
+		<li class="parties">Parties</li>
+		<li class="magazine">Magazine</li>
+		<li class="shop">Shop</li>
+		<li class="archive">Archive</li>
+		</ul>
+	</div>
+	<div id="search">
+		<li class="search"><img src="search-icon.png"></li></div>
+</div>
+<div class="banner">
+	<img src="tandc.jpg" class="banner"></a>
+	<div id="popular">Most Popular</div>
+        <a href="http://charlesbuenconsejo.com/reality-is-a-hologram/"><img src="charles.jpg" class="banner"></a>
+        <div id="caption">Reality Is A Hologram</div>
+        <img src="cake.jpg" class="banner">
+        <div id="caption">Spring/Summer Cake</div>
+        <img src="cell.jpg" class="banner">
+	</div>
+</div>
+<br>
+<p class="category">Book Club</p>
+<h1>Louis Vuitton Fashion Photography</h1>
+<p class="credits">
+<i>Text</i> / <strong>Anna Canlas</strong>&nbsp;&nbsp;&nbsp;&nbsp; <i>Images</i> / <strong>Rizzoli</strong></p>
+<span title="Copyright by StyleBible"><img src="lvbook.jpg" class="main"></span>
+<br>
+<h3>
+The New Yorker's staff contains a small but vocal contingent of hockey fans. On this week's Out Loud podcast, three of the magazine's most ardent rink rats--Ben McGrath, who recently wrote about the hockey player P. K. Subban; Nick Paumgarten, who plays regularly in a local league; and Adam Gopnik, who is Canadian--join the editor John Bennet to discuss the sport. They talk about how they first encountered hockey and learned to love it, the relationship between hockey and writing, and why, as Bennet puts it, having a child who plays hockey "seems to exacerbate the psychosis that is parenthood."</h3>
+<h3>Olivia Palermo is an anomaly in the world of celebrity. She isn't divisive (her style is unanimously admired), there isn't a single unflattering photograph of her anywhere (not even when walking her dog early in the morning) and although we could hate her for her ridiculously handsome husband, jet-setting lifestyle and fashion connections' we still want to be her friend.</h3>
+<div class="action">Buy The Book</div>
+<div class="line"></div>
+<h4 class="share">Share This</h4>
+<img src="sharebuttons.png" class="share">
+<footer id="footer">
+	<img src="sblogo.gif" class="logo">
+	<div class="container">
+	<div class="cols">
+		<div class="col1">
+		<h2>StyleBible</h2>
+		<span class="items">
+			6F/7F Robinsons Cybergate Tower 3<br>
+			Pioneer St., Mandaluyong 1550<br>
+			+(632) 451-8888<br>
+		</span>
+		<div class="col2">
+		<h2>Further Information</h2>
+		<span class="items">	
+			Work With Us<br>
+			Advertising<br>
+			Job Opportunities<br>
+			FAQs<br>
+		</span>
+		</div>
+		<div class="col3">
+		<h2>Categories</h2>
+		<span class="items">
+		Cool Girl<br>
+		Book Club<br>
+		To Look This Cheap<br>
+		Je Ne Sais Coif<br>
+		This<br>
+		SB Top 10<br>
+		Department of Comportment<br>
+		</span>
+		</div>
+		<div class="col4">
+			<h2>Monthly Archive</h2>
+			<span class="items">
+				December 2014<br>
+				November 2014<br>
+				October 2014<br>
+				September 2014<br>
+				August 2014<br>
+				July 2014<br>
+				June 2014<br>
+				May 2014<br>
+				April 2014<br>
+				March 2014<br>
+				February 2014<br>
+				January 2014<br>
+				</span>
+		</div>
+		<div class="col5">
+			<h2>Authors</h2>
+			<span class="items">
+			Anna Canlas<br>
+			Gabriela Tatad<br>
+			Lyca Puno<br>
+			Hannah Cruz<br>
+			Janthina Fong<br>
+			Karen Bolilia<br>
+			Mariah Reodica<br>
+			Saab Magalona<br>
+			Gabby Cantero<br>
+			Cru Camara<br>
+			JC Cerilla<br>
+			Pam Santos<br>
+			</span>
+		</div>
+		<div class="col6">
+			<h2>Summit Media Network</h2>
+			<span class="items">
+			Candymag.com<br>
+			FemaleNetwork.com<br>
+			ElleDecor.ph<br>
+			Cosmo.ph<br>
+			Esquire.ph<br>
+			</span>
+		</div>
+	</div>
+	</footer>
+	<img src="lvad.jpg" class="bottom-ad">
+</body>
+</html>

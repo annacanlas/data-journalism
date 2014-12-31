@@ -1,0 +1,663 @@
+<html>
+	<head>
+		<style>
+
+			#title {
+			font-size: 70px;
+			text-align: center;
+			text-decoration: none;
+			width: auto;
+			font-family: anke;
+			color:rgb(0,0,0);
+			display: inline;
+			margin-left: 515px;
+			}
+
+			a:hover {
+				font-style: bold;
+				color: #F6CEF5;
+			}
+
+			div.blurb {
+			color: rgb(34,34,34);
+			font-family: helvetica;
+			text-transform: uppercase;
+			font-size: 12px;
+			height: 22px;
+			line-height: 22.39999996185303px;
+			margin-left: 435px;
+			font-weight: bolder;
+			padding-top: 20px;
+			letter-spacing: 1px;
+			}
+
+			li {
+				cursor: auto;
+				display: inline;
+				font-family: helvetica;
+				font-size: 12px;
+				font-stretch: normal;
+				font-style: normal;
+				font-weight: bold;
+				height: auto;
+				letter-spacing: 0.300000011920929px;
+				line-height: 30px;
+				padding-bottom: 5px;
+				padding-left: 35px;
+				padding-right: 11px;
+				padding-top: 0px;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+				vertical-align: baseline;
+				width: auto;
+				zoom: 1;
+				color: #BDBDBD;
+			}
+
+			div.border {
+			border-bottom-color: #BDBDBD;
+			border-bottom-style: dotted;
+			border-width: 1px;
+			margin-bottom: 30px;
+			}
+
+			div.header {
+				background-attachment: scroll;
+				background-clip: border-box;
+				background-color: rgba(255,255,255,1);
+				background-image: none;
+				background-origin: padding-box;
+				background-size: auto;
+				border-bottom-color: rgb(204,204,204);
+				border-bottom-style: dotted;
+				border-bottom-width: 1px;
+				box-sizing: border-box;
+				display: block;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				z-index: 11;
+				height: auto;
+				padding-top: 20px;
+			}
+
+			#navi {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 15;
+				left: 0;
+			}
+
+			#navi2 {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 15;
+				left: 805;
+			}
+
+			#search {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 28;
+				left: 1270;
+			}
+			
+			a {
+    			text-decoration: none;
+    			color: inherit;
+			}
+
+			#background {   
+    			background-color: black;
+    			color: white;
+    			width: 240px;
+			}
+
+			#popular {
+    			background-color: black;
+    			color: white;
+    			width: 240px;
+			}
+
+			#banner {
+				font-size: 20px;
+				font-family: anke;
+				vertical-align: center;
+				margin-left: 1035px;
+				position: absolute;
+    			left: 50px; 
+    			text-align: center;
+  				line-height: 50px;
+  				margin-top: 150px;
+  				padding-left: 5px;
+  				border-left-color: black;
+  				border-left-width: 1px;
+  				border-left-style: dotted;
+  				height: auto;
+			}
+
+			#social {
+    			background-color: black;
+    			color: white;
+    			width: 240px;
+			}
+
+			#sponsors {
+    			background-color: black;
+    			color: white;
+    			width: 240px;
+			}
+
+			img.banner {
+				width: 240px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			#caption {
+				font-family: arial;
+				font-size: 14px;
+				
+			}
+
+			img.main {
+				width: 75%;
+				margin-left: 20px;
+				margin-top: 150px;
+			}
+
+			div.headline {
+				left: 0;
+				width: 100%;
+			}
+
+
+			span.category {
+				font-family: helvetica;
+				font-size: 12px;
+				line-height: 12px;
+				font-weight: bolder;
+				text-transform: uppercase;
+				width: 960px;
+				padding-left: 20px;
+				color: #F5A9E1;
+				margin-bottom: 20px;
+			}
+
+			h3 {
+				font-family: anke;
+				font-size: 30px;
+				line-height: 25px;
+				width: 960px;
+				vertical-align: baseline;
+				margin-left: 435px;
+			}
+
+			h3 span {
+				color: white; 
+				letter-spacing: 2px;
+   			background: rgb(0, 0, 0);
+   			background: black;
+   			padding: 10px;
+   			padding-top: -30px;
+   		}
+
+			p {
+				font-family: times;
+				color: rgb(77,77,77);
+				font-size: 25px;
+				line-height: 12px;
+				margin-bottom: 4px;
+				font-weight: normal;
+				width: 960px;
+				vertical-align: baseline;
+				margin-left: 425px;
+			}
+
+			span.author {
+				font-family: helvetica;
+				color: rgb(153,153,153);
+				font-size: 13px;
+				line-height: 15px;
+				font-weight: normal;
+				width: 960px;
+				vertical-align: baseline;
+				padding-left: 20px;
+			}
+
+			span.article-title {
+				font-family: anke;
+				color: black;
+				margin-top: 8px;
+				font-size: 25px;
+				line-height: 26.0003456px;
+				font-weight: normal;
+				width: 400px;
+				vertical-align: baseline;
+				padding-left: 20px;
+				display: inline-block;
+			}
+
+			table {
+				padding-left: 10px;
+				border-top-color: grey;
+				border-top-style: dotted;
+				border-top-width: 1px;
+				padding-left: 200px;
+			}
+
+			img.thumbnail {
+				width: 350px;
+			}
+
+			p.preview {
+				font-family: Times;
+				font-size: 20px;
+				margin-left: 20px;
+				color: rgb(77,77,77);
+				width: 380px;
+				line-height: 20px;
+			}
+
+			div.archive {
+				border-bottom-color: rgb(191,191,191);
+				border-bottom-style: solid;
+				border-bottom-width: 1px;
+				border-left-color: rgb(191,191,191);
+				border-left-style: solid;
+				border-left-width: 1px;
+				border-right-color: rgb(191,191,191);
+				border-right-style: solid;
+				border-right-width: 1px;
+				border-top-color: rgb(191,191,191);
+				border-top-style: solid;
+				border-top-width: 1px;
+				font-size: 12px;
+				font-family: anke;
+				font-style: normal;
+				height: 12px;
+				line-height: 12px;
+				text-decoration: none;
+				vertical-align: baseline;
+				padding-top: 6px;
+				padding-left: 6px;
+				padding-right: 6px;
+				padding-bottom: 6px;
+				width: 122px;
+				text-align: center;
+				margin-top: 50px;
+				margin-left: 500px;
+				margin-bottom: 30px;
+			}
+
+		footer {
+			background-attachment: scroll;
+			background-clip: border-box;
+			background-color: rgb(229,229,229);
+			background-size: auto;
+			font-family: anke;
+			font-size: 11px;
+			font-style: normal;
+			height: 450px;
+			line-height: 16px;
+			padding-bottom: 30px;
+			padding-top: 30px;
+			position: relative;
+			text-align: center;
+			vertical-align: baseline;
+			width: 1360px;
+			margin-top: 80px;
+		}
+
+		div.newsletter {
+			margin-left: -250px;
+		}
+
+		input.button {
+			box-sizing: border-box;
+			color: rgb(255,255,255);
+			cursor: default;
+			display: inline-block;
+			font-family: anke;
+			font-size: 12px;
+			line-height: 12px;
+			padding-bottom: 5px;
+			padding-left: 5px;
+			padding-right: 5px;
+			padding-top: 3px;
+			text-align: center;
+			vertical-align: middle;
+			white-space: pre;
+			width: 64px;
+			writing-mode: lr-tb;
+			background-color: #F6CEF5;
+			text-shadow: none;
+			color:transparent;
+			border:none;
+			box-shadow:none;
+			color: black;
+		}
+
+		img.logo {
+			width: 38px;
+			padding-bottom: 40px;
+			margin-left: -40px;
+		}
+
+		div.cols {
+			font-family: anke;
+			font-size: 11px;
+			outline-width: 0px;
+			outline-color: rgb(153,153,153);
+			color: rgb (153,153,153);
+			overflow-x: hidden;
+			overflow-y: hidden;
+			text-align: left;
+			vertical-align: baseline; 
+			font-weight: normal;
+			margin-top: 30px;
+		}
+
+		h2 {
+			color: rgb(77,77,77);
+			font-weight: normal;
+			font-size: 11px;
+		}
+
+		div.col1 {
+			width: 200px;
+			float: left;
+			padding-left: 150px;
+		}
+
+		div.col2 {
+			width: 200px;
+			float: left;
+			padding-left: 250px;
+			margin-top: -82px;
+		}
+
+		div.col3 {
+			width: 200px;
+			float: left;
+			padding-left: 415px;
+			margin-top: -97px;
+		}
+
+		div.col4 {
+			width: 200px;
+			float: left;
+			padding-left: 610px;
+			margin-top: -145px;
+		}
+
+		div.col5 {
+			width: 200px;
+			float: left;
+			padding-left: 780px;
+			margin-top: -225px;
+		}
+
+		div.col6 {
+			width: 200px;
+			float: left;
+			padding-left: 950px;
+			margin-top: -228px;
+		}
+
+		span.items {
+			font-family: helvetica;
+			font-weight: normal;
+			color: white;
+		}
+
+		</style>
+		<title>Preview Magazine Online</title>
+</head>
+
+<body>
+<div class="header">
+	<div id="title"><a href="stylebible.html">StyleBible</a></div>
+	<div id="navi">
+		<ul>
+		<li class="fashion">Fashion</li>
+		<li class="beauty"><a href="beauty.html">Beauty</a></li>
+		<li class="culture">Culture</li>
+		<li class="parties">Parties</li>
+		</ul>
+	</div>
+	<div id="navi2">
+		<ul>
+		<li class="magazine"><a href="http://sg.zinio.com/magazine/Preview/pr-500609574/cat-cat2366478">Magazine</a></li>
+		<li class="shop"><a href="shop.html">Shop</a></li>
+		<li class="archive">Archive</li>
+		<li class="contact"><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<div id="search">
+		<li class="search"><img src="search-icon.png"></li>
+	</div>
+	<div class="blurb">The Philippines' Best Selling Fashion Magazine, Now Online</div>
+		<br>
+</div>
+<div id="banner">
+        <div id="background">This Month</div>
+        <a href="http://sg.zinio.com/magazine/Preview/pr-500609574/cat-cat2366478"><img src="marian.jpg" class="banner"></a>
+        <div id="popular">Most Popular</div>
+        <a href="http://charlesbuenconsejo.com/reality-is-a-hologram/"><img src="charles.jpg" class="banner"></a>
+        <div id="caption">Reality Is A Hologram</div>
+        <img src="cake.jpg" class="banner">
+        <div id="caption">Spring/Summer Cake</div>
+        <div id="sponsors">Brought To You By</div>
+        <img src="pantene.jpg" class="banner"></a>
+        <div id="caption">#WhipIt</div>
+        <img src="bananarep.jpg" class="banner"></a>
+        <div id="social">On Our Mood Board</div>
+        <a href="http://www.pinterest.com/pin/317363104966764492/"><img src="miumiu.jpg" class="banner"></a>
+        <div id="caption">Miu Miu Resort 2015</div>
+        <a href="http://www.pinterest.com/pin/317363104966634834/"><img src="celine.jpg" class="banner"></a>
+        <div id="caption">Celine Resort 2015</div>
+        <a href="http://www.pinterest.com/pin/317363104966889000/"><img src="cartier.jpg" class="banner"></a>
+        <div id="caption">Brands In Bloom</div>
+</div>
+<div class="headline">
+	<img src="pauline2.jpg" class="main">
+	<h3><span>Cutting Corners</span></h3>
+	<p>The Art of the Cheap Haircut</p>
+</div>
+<!--peg for slideshow: the selby-->
+<br>
+<table>
+<tr>
+	<td><br><img src="ManilaAcapulco.jpg" class="thumbnail"></td>
+	<td>
+	<span class="category">Art</span>
+	<br>
+	<span class="article-title">Still Life With Balikbayan Boxes</span>
+	<br>
+	<span class="author">Anna Canlas &middot; 5 minutes ago</span>
+	<p class="preview">
+	Lorem ipsum dolor sit amet, orci mattis dolor et rhoncus eleifend amet, tristique urna vivamus fusce, in elit sed erat metus, nibh eros proin a sagittis. Aenean feugiat, at vestibulum rutrum dolor nisl in...</p>
+	</td>
+</tr>
+<tr>
+	<td><br><img src="vania.png" class="thumbnail"></td>
+	<td>
+	<span class="category">Fashion</span>
+	<br>
+	<span class="article-title">Vania Romoff A/W 2014 Lookbook</span>
+	<br>
+	<span class="author">Anna Canlas &middot; 1 hour ago</span>
+	<p class="preview">
+	Lorem ipsum dolor sit amet, orci mattis dolor et rhoncus eleifend amet, tristique urna vivamus fusce, in elit sed erat metus, nibh eros proin a sagittis. Aenean feugiat, at vestibulum rutrum dolor nisl in...</p>
+	</td>
+</tr>
+<tr>
+	<td><br><img src="silverlining.jpg" class="thumbnail"></td>
+	<td>
+	<span class="category">Beauty</span>
+	<br>
+	<span class="article-title">Eye Makeup Trend: Silver Linings</span>
+	<br>
+	<span class="author">Anna Canlas &middot; 1 day ago</span>
+	<p class="preview">
+	Lorem ipsum dolor sit amet, orci mattis dolor et rhoncus eleifend amet, tristique urna vivamus fusce, in elit sed erat metus, nibh eros proin a sagittis. Aenean feugiat, at vestibulum rutrum dolor nisl in...</p>
+	</td>
+</tr>
+<tr>
+	<td><br><a href="article.html"><img src="lvbook.jpg" class="thumbnail"></a></td>
+	<td>
+	<span class="category"><a href="article.html">Book Club</a></span>
+	<br>
+	<span class="article-title">Louis Vuitton Fashion Photography</span>
+	<br>
+	<span class="author">Anna Canlas &middot; 1 day ago</span>
+	<p class="preview">
+	Lorem ipsum dolor sit amet, orci mattis dolor et rhoncus eleifend amet, tristique urna vivamus fusce, in elit sed erat metus, nibh eros proin a sagittis. Aenean feugiat, at vestibulum rutrum dolor nisl in...</p>
+	</td>
+</tr>
+<tr>
+	<td><br><img src="houseparty.jpg" class="thumbnail"></td>
+	<td>
+	<span class="category">Parties</span>
+	<br>
+	<span class="article-title">Lauren Young's Birthday Bash</span>
+	<br>
+	<span class="author">Anna Canlas &middot; 2 days ago</span>
+	<p class="preview">
+	Lorem ipsum dolor sit amet, orci mattis dolor et rhoncus eleifend amet, tristique urna vivamus fusce, in elit sed erat metus, nibh eros proin a sagittis. Aenean feugiat, at vestibulum rutrum dolor nisl in...</p>
+	</td>
+</tr>
+<tr>
+	<td><br><a href="https://www.youtube.com/watch?v=lfxNV5H41zA"><img src="rimowa.jpg" class="thumbnail"></a></td>
+	<td>
+	<span class="category">SB Promotions</span>
+	<br>
+	<span class="article-title">High Fashion Flyers</span>
+	<br>
+	<span class="author">Anna Canlas &middot; 4 days ago</span>
+	<p class="preview">
+	Lorem ipsum dolor sit amet, orci mattis dolor et rhoncus eleifend amet, tristique urna vivamus fusce, in elit sed erat metus, nibh eros proin a sagittis. Aenean feugiat, at vestibulum rutrum dolor nisl in...</p>
+	</td>
+</tr>
+<tr>
+	<td><br><a href="https://www.youtube.com/watch?v=lfxNV5H41zA"><img src="sinyma.png" class="thumbnail"></a></td>
+	<td>
+	<span class="category">Music</span>
+	<br>
+	<span class="article-title">Video: Sinyma "About It"<br>Starring Jess Connelly</span>
+	<br>
+	<span class="author">Anna Canlas &middot; 1 week ago</span>
+	<p class="preview">
+	Lorem ipsum dolor sit amet, orci mattis dolor et rhoncus eleifend amet, tristique urna vivamus fusce, in elit sed erat metus, nibh eros proin a sagittis. Aenean feugiat, at vestibulum rutrum dolor nisl in...</p>
+	</td>
+</tr>
+<tr>
+	<td><br><img src="ysl.jpg" class="thumbnail"></td>
+	<td>
+	<span class="category">Shop</span>
+	<br>
+	<span class="article-title">YSL Beauty Ice Coat</span>
+	<br>
+	<span class="author">Anna Canlas &middot; 3 weeks ago</span>
+	<p class="preview">
+	Lorem ipsum dolor sit amet, orci mattis dolor et rhoncus eleifend amet, tristique urna vivamus fusce, in elit sed erat metus, nibh eros proin a sagittis. Aenean feugiat, at vestibulum rutrum dolor nisl in...</p>
+	</td>
+</tr>
+</table>
+
+<div class="archive">View Archive</div>
+
+<footer id="footer">
+	<img src="sblogo.gif" class="logo">
+	<div class="newsletter">
+		<p>Sign up for the StyleBible newsletter.</p>
+		<p>
+			<input type="text" name="email" placeholder "Enter your email address">
+			<input type="submit" value="Subscribe" class="button">
+		</p>
+		</form>
+	</div>
+	<div class="container">
+	<div class="cols">
+		<div class="col1">
+		<h2>StyleBible</h2>
+		<span class="items">
+			8F Robinsons Cybergate Tower 3<br>
+			Pioneer St., Mandaluyong 1550<br>
+			+(632) 451-8888<br>
+		</span>
+		<div class="col2">
+		<h2>Further Information</h2>
+		<span class="items">	
+			Work With Us<br>
+			Advertising<br>
+			Job Opportunities<br>
+			FAQs<br>
+		</span>
+		</div>
+		<div class="col3">
+		<h2>Categories</h2>
+		<span class="items">
+		Cool Girl<br>
+		Book Club<br>
+		To Look This Cheap<br>
+		Je Ne Sais Coif<br>
+		This<br>
+		SB Top 10<br>
+		Department of Comportment<br>
+		</span>
+		</div>
+		<div class="col4">
+			<h2>Monthly Archive</h2>
+			<span class="items">
+				December 2014<br>
+				November 2014<br>
+				October 2014<br>
+				September 2014<br>
+				August 2014<br>
+				July 2014<br>
+				June 2014<br>
+				May 2014<br>
+				April 2014<br>
+				March 2014<br>
+				February 2014<br>
+				January 2014<br>
+				</span>
+		</div>
+		<div class="col5">
+			<h2>Contributors</h2>
+			<span class="items">
+			Anna Canlas<br>
+			Gabriela Tatad<br>
+			Lyca Puno<br>
+			Hannah Cruz<br>
+			Janthina Fong<br>
+			Karen Bolilia<br>
+			Mariah Reodica<br>
+			Saab Magalona<br>
+			Gabby Cantero<br>
+			Cru Camara<br>
+			JC Cerilla<br>
+			Pam Santos<br>
+			</span>
+		</div>
+		<div class="col6">
+			<h2>Summit Media Network</h2>
+			<span class="items">
+			Candymag.com<br>
+			FemaleNetwork.com<br>
+			ElleDecor.ph<br>
+			Cosmo.ph<br>
+			Esquire.ph<br>
+			</span>
+		</div>
+	</div>
+	</footer>
+</body>
+</html>
